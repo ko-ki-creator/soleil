@@ -6,7 +6,9 @@
     <title>PF | Soleil</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
+
 <body>
     <header>
         <div class="header-wrapper">
@@ -24,29 +26,79 @@
                         <li class="nav-item"><a href="#access">アクセス</a></li>
                     </ul>
                 </nav>
-            </div>
-            <div class="header-fixed">
-                <div class="header-inner-fixed">
-                    <a href="#"><h1>SOLEIL</h1></a>
-                    <nav class="header-nav-fixed">
-                        <ul class="nav-list">
-                            <li class="nav-item"><a href="#">ホーム</a></li>
-                            <li class="nav-item"><a href="#style">スタイル</a></li>
-                            <li class="nav-item"><a href="#concept">コンセプト</a></li>
-                            <li class="nav-item"><a href="#staff">スタッフ</a></li>
-                            <li class="nav-item"><a href="#features">特徴</a></li>
-                            <li class="nav-item"><a href="#news">最新情報</a></li>
-                            <li class="nav-item"><a href="#menu">メニュー</a></li>
-                            <li class="nav-item"><a href="#access">アクセス</a></li>
-                        </ul>
-                    </nav>
+                <div class="header-nav-sns">
+                    <a href=""><img src="images/nav-icon-facebook.png" alt=""></a>
+                    <a href=""><img src="images/nav-icon-instagram.png" alt=""></a>
                 </div>
+                <a href="#" class="nav-reserve-btn">
+                    <p class="reserve">ご予約はこちらから</p>
+                    <img src="images/gold-arrow.png" alt="">
+                </a>
+                <button class="hamburger" id="js-hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="header-inner-fixed">
+                <a href="#"><h1>SOLEIL</h1></a>
+                <nav class="header-nav-fixed">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#">ホーム</a></li>
+                        <li class="nav-item"><a href="#style">スタイル</a></li>
+                        <li class="nav-item"><a href="#concept">コンセプト</a></li>
+                        <li class="nav-item"><a href="#staff">スタッフ</a></li>
+                        <li class="nav-item"><a href="#features">特徴</a></li>
+                        <li class="nav-item"><a href="#news">最新情報</a></li>
+                        <li class="nav-item"><a href="#menu">メニュー</a></li>
+                        <li class="nav-item"><a href="#access">アクセス</a></li>
+                    </ul>
+                </nav>
+                <div class="header-nav-sns">
+                    <a href=""><img src="images/nav-icon-facebook.png" alt=""></a>
+                    <a href=""><img src="images/nav-icon-instagram.png" alt=""></a>
+                </div>
+                <a href="#" class="nav-reserve-btn">
+                    <p class="reserve">ご予約はこちらから</p>
+                    <img src="images/gold-arrow.png" alt="">
+                </a>
+                <button class="hamburger" id="js-hamburger-second">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
 
     </header>
 
     <main>
+        <!-- ナビゲーション -->
+        <section class="navigation">
+            <div class="navigation-container" id="js-nav">
+                <nav class="nav-sp">
+                    <ul class="nav-list-sp">
+                        <li class="nav-item"><a href="#">ホーム</a></li>
+                        <li class="nav-item"><a href="#style">スタイル</a></li>
+                        <li class="nav-item"><a href="#concept">コンセプト</a></li>
+                        <li class="nav-item"><a href="#staff">スタッフ</a></li>
+                        <li class="nav-item"><a href="#features">特徴</a></li>
+                        <li class="nav-item"><a href="#news">最新情報</a></li>
+                        <li class="nav-item"><a href="#menu">メニュー</a></li>
+                        <li class="nav-item"><a href="#access">アクセス</a></li>
+                    </ul>
+                </nav>
+                <div class="header-nav-sns">
+                    <a href=""><img src="images/nav-icon-facebook.png" alt=""></a>
+                    <a href=""><img src="images/nav-icon-instagram.png" alt=""></a>
+                </div>
+                <a href="#" class="nav-reserve-btn">
+                    <p class="reserve">ご予約はこちらから</p>
+                    <img src="images/gold-arrow.png" alt="">
+                </a>
+            </div>
+        </section>
+
         <!-- ファーストビュー -->
         <section class="first-view">
             <div class="fv-wrapper">
@@ -205,7 +257,7 @@
         </section>
 
         <!-- スタイル -->
-        <section class="style">
+        <section class="style" id="style">
             <div class="wrapper">
                 <div class="inner">
                     <div class="heading">
@@ -286,7 +338,7 @@
         </section>
 
         <!-- スタッフ -->
-        <section class="staff">
+        <section class="staff" id="staff">
             <div class="wrapper">
                 <div class="inner">
                     <div class="heading">
@@ -523,7 +575,7 @@
         </section>
 
         <!-- アクセス -->
-        <section class="access">
+        <section class="access" id="access">
             <div class="wrapper">
                 <div class="inner">
                     <div class="heading">
