@@ -1,28 +1,30 @@
 // スクロール開始時に固定ヘッダー表示・初期ヘッダー非表示
-const fixed = document.querySelector('.header-fixed');
+const nav = document.querySelector('.header-nav');
 const inner = document.querySelector('.header-inner');
 
     window.addEventListener('scroll', function() {
         if (window.scrollY > 50) {
-            fixed.classList.add('show');
+            nav.classList.add('header-fixed');
             inner.classList.add('show');
+            inner.classList.remove('hide');
         } else {
-            fixed.classList.remove('show');
+            nav.classList.remove('header-fixed');
             inner.classList.remove('show');
+            inner.classList.add('hide');
         }
     });
 
 
 $(function () {
   // ハンバーガーボタンクリックで実行
-        $("#js-hamburger, #js-hamburger-second").click(function () {
+        $("#js-hamburger").click(function () {
         $(this).toggleClass("active");
         $("#js-nav").toggleClass("active");
     });
 
     // メニュー項目のクリック時にメニューを閉じる
         $(".nav-item a").click(function () {
-        $("#js-hamburger, #js-hamburger-second").removeClass("active");
+        $("#js-hamburger").removeClass("active");
         $("#js-nav").removeClass("active");
     });
 });
