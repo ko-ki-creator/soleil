@@ -20,6 +20,13 @@ $(function () {
         $("#js-hamburger").click(function () {
         $(this).toggleClass("active");
         $("#js-nav").toggleClass("active");
+
+        // ナビゲーション展開時にスクロール制御
+        if ($("#js-nav").hasClass("active")) {
+            $("body").css("overflow", "hidden");
+        } else {
+            $("body").css("overflow", "");
+        }
     });
 
     // メニュー項目のクリック時にメニューを閉じる

@@ -104,6 +104,16 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+@media (hover: hover) and (pointer: fine) {
+    .nav-reserve-btn:hover {
+        box-shadow: 0px 0px 0px 0px rgba(127, 118, 116, 1);
+    }
+
+    .fv-content a:hover {
+        box-shadow: 2px 2px 10px 0px rgba(255, 255, 255, 0.45);
+    }
+}
+
 /* ---------------------------------------------------
 PC
 --------------------------------------------------- */
@@ -336,9 +346,9 @@ PC
         box-shadow: 2px 2px 10px 0px rgba(127, 118, 116, 1);
         transition-duration: .5s;
 
-        &:hover {
+        /* &:hover {
             box-shadow: 0px 0px 0px 0px rgba(127, 118, 116, 1);
-        }
+        } */
 
         p {
             font-size: 21px;
@@ -397,7 +407,7 @@ PC
 
 /* -----------------------------------------ファーストビュー */
 .fv-wrapper {
-    background-image: url(/images/fv-back.jpg);
+    background-image: url(/images/first-view/fv-back.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -479,9 +489,9 @@ PC
         box-shadow: 2px 2px 10px 0px rgba(127, 118, 116, 1);
         transition-duration: .5s;
 
-        &:hover {
+        /* &:hover {
             box-shadow: 2px 2px 10px 0px rgba(255, 255, 255, 0.45);
-        }
+        } */
 
         .search {
             color: var(--gray);
@@ -508,7 +518,7 @@ PC
 
 /* -----------------------------------------コンセプト*/
 .concept {
-    background-image: url(/images/concept-back.png);
+    background-image: url(/images/concept/concept-back.png);
     background-size: 60% auto, cover;
     background-repeat: no-repeat;
     background-position: right;
@@ -560,7 +570,7 @@ PC
 
 /* -----------------------------------------メニュー*/
 .menu {
-    background-image: url(/images/menu-back.png);
+    background-image: url(/images/menu/menu-back.png);
     background-size: 40% auto, cover;
     background-repeat: no-repeat;
     background-position: top right;
@@ -654,7 +664,7 @@ PC
 
 /* -----------------------------------------スタッフ*/
 .staff-content {
-    background-image: url(/images/staff-back.png);
+    background-image: url(/images/staff/staff-back.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -845,7 +855,7 @@ table {
 
             &::before {
                 content: '';
-                background-image: url(/images/footer-arrow.png);
+                background-image: url(/images/icon/footer-arrow.png);
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center;
