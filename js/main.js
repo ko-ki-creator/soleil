@@ -16,8 +16,8 @@ const inner = document.querySelector('.header-inner');
 
 
 $(function () {
-  // ハンバーガーボタンクリックで実行
-        $("#js-hamburger").click(function () {
+    // ハンバーガーボタンクリックで実行
+    $("#js-hamburger").click(function () {
         $(this).toggleClass("active");
         $("#js-nav").toggleClass("active");
 
@@ -30,8 +30,9 @@ $(function () {
     });
 
     // メニュー項目のクリック時にメニューを閉じる
-        $(".nav-item a").click(function () {
+    $(".nav-item a").click(function () {
         $("#js-hamburger").removeClass("active");
         $("#js-nav").removeClass("active");
+        $("body").css("overflow", "");
     });
 });
