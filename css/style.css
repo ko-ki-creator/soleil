@@ -157,7 +157,7 @@ PC
 .header-nav {
     position: fixed;
     top: 20px;
-    right: 0;
+    right: 15px;
     width: 150px;
 
     .nav-list {
@@ -167,7 +167,7 @@ PC
             width: 100%;
             text-align: right;
             margin-bottom: 10px;
-            padding-right: 15px;
+            /* padding-right: 15px; */
 
             a {
                 color: var(--gold);
@@ -209,13 +209,13 @@ PC
 
     .nav-list {
         display: flex;
+        gap: 15px;
         width: 100%;
 
         .nav-item {
             width: 100%;
             text-align: center;
             margin-bottom: 10px;
-            padding-right: 15px;
 
             a {
                 color: var(--gold);
@@ -223,7 +223,8 @@ PC
                 border-bottom: 1px solid var(--gold);
                 width: 100%;
                 padding: 5px 0;
-                display: inline-block;
+                /* display: inline-block; */
+                display: block;
                 transition-duration: .4s;
 
                 &:hover {
@@ -918,6 +919,33 @@ table {
 
 
 
+@media screen and (max-width: 1280px) {
+    /* -----------------------------------------ヘッダー */
+    .hamburger {
+        display: block;
+    }
+
+    .header-nav,
+    .header-nav.header-fixed {
+        display: none;
+    }
+
+    .header-inner {
+        background-color: var(--white);
+        height: 90px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -961,22 +989,7 @@ SP
         }
     }
 
-
-    /* -----------------------------------------ヘッダー */
-    .hamburger {
-        display: block;
-    }
-
-    .header-nav,
-    .header-nav.header-fixed {
-        display: none;
-    }
-
-    .header-inner {
-        background-color: var(--white);
-        height: 90px;
-    }
-
+    /* ヘッダー */
     .logo {
         top: 30px;
 
